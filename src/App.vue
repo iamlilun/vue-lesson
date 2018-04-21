@@ -1,19 +1,19 @@
-<<script>
+<script>
 import TodoInput from './TodoInput.vue';
 import TodoItem from './TodoItem.vue';
 
-export default{
-  components:{
+export default {
+  components: {
     TodoInput,
-    TodoItem, 
+    TodoItem,
   },
-  data(){
+  data() {
     return {
       todos: [],
     };
   },
-  methods:{
-    addTodo(text){
+  methods: {
+    addTodo(text) {
       this.todos.push(text);
     }
   }
