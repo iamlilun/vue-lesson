@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="submit">
-        <input v-model="txet" />
+        <input v-model="text" />
         <button type="submit">Submit</button>
     </form>
 </template>
@@ -9,12 +9,11 @@
 export default {
     data() {
         return {
-            txet: "",
+            text: "",
         }
     },
     methods: {
         submit() {
-            console.log('fuckV-model', this.text);
             this.$emit('submit', this.text);
             this.text = '';
         },
